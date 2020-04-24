@@ -52,15 +52,27 @@
     <div >
       <p id = "question 1:"> Question 1: What does CPU stand for?</p>
       <form id ="ans1">
-        <input type="radio" class="op1" name="ansop1" value=1>
+        <input type="radio" class="op1" name="question1" value=1 onclick = "myFunction(this.value)">
         <label for="ansop1">Central Processing Unit</label><br>
-        <input type="radio" class="op2" name="ansop2" value=0>
+        <input type="radio" class="op2" name="question1" value=0 onclick = "myFunction.(this.value)">
         <label for="ansop2">Central Process Unit</label><br>
-        <input type="radio" id="other" name="ansop3" value=0>
+        <input type="radio" id="other" name="question1" value=0 onclick = "myFunction.(this.value)">
         <label for="ansop3"=>Computer Personal Unit</label><br>
-        <input type="radio" value=0>
+        <input type="radio" name ="question1" value=0 onclick = "myFunction.(this.value)">
         <label for="ansop4">Central Processor Unit</label>
       </form>
+
+      <p class = "result"></p>
+
+    
+
+    <script>
+    function myFunction(question1)
+      document.getElementById("result").value = question1;
+    }
+    </script>
+
+
        <script>function a (input.value=== 1){
       
         console.log("Correct answer");
