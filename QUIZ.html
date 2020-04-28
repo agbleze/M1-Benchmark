@@ -54,25 +54,25 @@
       <form id ="ans1">
         <input type="radio" class="op1" name="question1" value=1 onclick = "myFunction(this.value)">
         <label for="ansop1">Central Processing Unit</label><br>
-        <input type="radio" class="op2" name="question1" value=0 onclick = "myFunction.(this.value)">
+        <input type="radio" class="op2" name="question1" value=0 onclick = "myFunction(this.value)">
         <label for="ansop2">Central Process Unit</label><br>
-        <input type="radio" id="other" name="question1" value=0 onclick = "myFunction.(this.value)">
+        <input type="radio" id="other" name="question1" value=0 onclick = "myFunction(this.value)">
         <label for="ansop3"=>Computer Personal Unit</label><br>
-        <input type="radio" name ="question1" value=0 onclick = "myFunction.(this.value)">
+        <input type="radio" name ="question1" value=0 onclick = "myFunction(this.value)">
         <label for="ansop4">Central Processor Unit</label>
       </form>
+    </div>
 
-      <p class = "result"></p>
-
-    
+      <button id = "result1" type="submit" onclick = "myFunction()">Button</button>
+      <p id = "result"></p>
 
     <script>
-    function myFunction(question1)
-      document.getElementById("result").value = question1;
+    function myFunction(question1){
+      document.getElementById("result1").value = question1;
     }
     </script>
 
-
+<!-- 
        <script>function a (input.value=== 1){
       
         console.log("Correct answer");
@@ -84,21 +84,28 @@
       <button onclick = "a"> submit</button>
       
     </div>
-
+  -->
     <div>
       <p id = "question 2"> Question 2: In the programming language Java, which of these keywords would you put 
         on a variable to make sure it doesn't get modified?</p>  
       <form>
-        <input type = "radio">
+        <input type = "radio" name = "question2" value = "wrong" onclick =" ">
         <label>Static</label> <br>
-        <input type = "radio">
+        <input type = "radio" name = "question2" value = "correct" onclick = " ">
         <label> Final </label> <br>
-        <input type = "radio">
+        <input type = "radio" name = "question2" value = "wrong">
         <label>Private</label> <br>
-        <input type = "radio">
+        <input type = "radio" name = "question2" value = "wrong">
         <label>Public</label>
       </form>
     </div>
+
+    <script>
+      function functionQue2() {
+        document.getElementById("question 2").style.display = " none "
+      }
+    </script>
+    <button onclick = "functionQue2()">Question 2</button>
 
     <div>
       <p id = "question 3"> Question 3: The logo for Snapchat is a Bell.</p>  
@@ -109,6 +116,11 @@
         <label> False </label> <br>
       </form>
     </div>
+    <p id = "answer" style = "display: none"></p>
+
+    <button type = "button" onclick = "document.getElementById('answer').style.display 
+    = 'block'">click me</button>
+
 
     <div>
       <p id = "question 4"> Question 4: Pointers were not used in the original C programming language; 
@@ -200,6 +212,14 @@
         <label>Jakarta</label>
       </form>
     </div>
+
+    <p id = "new"></p>
+
+    <button type = "button" 
+    onclick = "document.write('wrong answer')">ques 10 </button>
+
+    <button type = "button" onclick = window.print()>Print result</button>
+
 
     
     
